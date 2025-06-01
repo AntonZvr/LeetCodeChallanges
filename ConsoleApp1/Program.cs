@@ -1,2 +1,9 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿public class Solution
+{
+    public bool IsPalindrome(int x)
+    {
+        char[] charArray = x.ToString().ToCharArray();
+        Array.Reverse(charArray);
+        return new String(charArray) == x.ToString();
+    }
+}
